@@ -29,3 +29,8 @@ def guest_update_view(request, pk):
         guests_book.save()
 
         return redirect('index')
+
+def guest_delete_view(request, pk):
+    guests_book = get_object_or_404(Book, pk=pk)
+    guests_book.delete()
+    return redirect('index')

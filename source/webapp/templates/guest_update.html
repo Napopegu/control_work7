@@ -4,15 +4,15 @@
 <form action ='' method="POST">
 {% csrf_token %}
   <div class="form-floating mb-3">
-  <input type="text" class="form-control" id="title_id" name = "title" required>
+  <input type="text" class="form-control" id="title_id" name = "title" value="{{ guests.author_name }}" required>
   <label for="title_id">Имя</label>
 </div>
 <div class="form-floating mb-3">
-  <input type="email" class="form-control" id="mail_id" name="mail" required>
+  <input type="email" class="form-control" id="mail_id" name="mail" value="{{ guests.author_mail }}" required>
   <label for="mail_id">Email:</label>
 </div>
 <div class="form-floating">
-  <textarea class="form-control" id="description_id" name = "description"  required></textarea>
+  <textarea class="form-control" id="description_id" name = "description"   required></textarea>
   <label for="description_id">Текст:</label>
 </div>
 <button type="submit" class="btn btn-primary">Сохранить</button>
