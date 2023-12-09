@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% block title %} <h1>Добавить новую запись</h1> {% endblock %}
+{% block title %} <h1>Редактировать запись</h1> {% endblock %}
 {% block content %}
 <form action ='' method="POST">
 {% csrf_token %}
@@ -15,6 +15,6 @@
   <textarea class="form-control" id="description_id" name = "description"  required></textarea>
   <label for="description_id">Текст:</label>
 </div>
-<button type="submit" class="btn btn-primary">Добавить</button>
+<button type="submit" class="btn btn-primary">Сохранить</button>
 </form>
 {% endblock %}

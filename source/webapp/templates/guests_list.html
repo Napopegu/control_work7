@@ -9,10 +9,12 @@
         <div class="card" style="width: 25rem;">
   <div class="card-body">
     <h5 class="card-title">{{ guest.author_name }} ({{ guest.author_mail }})
-        <i class="fa-regular fa-pen-to-square"></i>
+        <a class="fa-regular fa-pen-to-square" href="{% url 'guest_update_view' pk=guest.pk %}"></a>
     <i class="fa-regular fa-copy"></i></h5>
     <p class="card-text">{{ guest.text }}</p>
+<p>
 
+        </p>
   </div>
 </div>
      {% endfor %}
