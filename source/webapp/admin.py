@@ -1,5 +1,5 @@
 from django.contrib import admin
-from webapp.models import  Book
+from webapp.models import Book
 @admin.register(Book)
 class BookAdmin(admin.ModelAdmin):
     pass
